@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Sura's Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Sura's Kitchen</h1>
+        <nav>
+            <span id="menu-icon">&#9776;</span>
+            <ul id="menu-list">
+                <li><a href="/suras-kitchen/index.html">Home</a></li>
+                <li><a href="/suras-kitchen/menu.html">Menu</a></li>
+                <li><a href="/suras-kitchen/about.html">About Us</a></li>
+                <li><a href="/suras-kitchen/contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Our Menu</h2>
+        <p>Explore our special dishes from Andhra, Karnataka, and Tamil Nadu.</p>
+
+        <!-- Menu Categories -->
+        <div class="menu-category">
+            <h3>Andhra Specials</h3>
+            <ul>
+                <li>Gongura Pachadi - ₹150</li>
+                <li>Andhra Chicken Curry - ₹250</li>
+                <li>Pulihora - ₹120</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Karnataka Specials</h3>
+            <ul>
+                <li>Bisibele Bath - ₹180</li>
+                <li>Mysore Pak - ₹100</li>
+                <li>Ragi Mudde - ₹90</li>
+            </ul>
+        </div>
+        <div class="menu-category">
+            <h3>Tamil Nadu Specials</h3>
+            <ul>
+                <li>Sambar - ₹100</li>
+                <li>Chettinad Chicken - ₹270</li>
+                <li>Idiyappam - ₹150</li>
+            </ul>
+        </div>
+
+        <!-- Images Section -->
+        <section class="item">
+            <div>
+                <img src="https://andhrapachallu.com/cdn/shop/files/DeWatermark.ai_1714679004409.png?v=1715362440&width=1445" alt="Andhra Special">
+                <p>Andhra Special</p>
+            </div>
+            <div>
+                <img src="https://www.anandsweets.in/cdn/shop/products/MysorePak.png?v=1702370572&width=1946" alt="Karnataka Special">
+                <p>Karnataka Special</p>
+            </div>
+            <div>
+                <img src="https://farm8.staticflickr.com/7890/46966041001_2590047365_o_d.jpg" alt="Tamil Nadu Special">
+                <p>Tamil Nadu Special</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Sura's Kitchen. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuIcon = document.getElementById('menu-icon');
+        const menuList = document.getElementById('menu-list');
+
+        menuIcon.addEventListener('click', () => {
+            menuList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
